@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Photography Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+body{
+  background:#111;
+  color:#fff;
+}
+header{
+  width:100%;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#000;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+}
+header h1{
+  font-size:22px;
+  font-weight:600;
+  color:#00eaff;
+  letter-spacing:1px;
+}
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#ddd;
+  font-size:15px;
+  transition:.2s;
+}
+nav a:hover{
+  color:#00eaff;
+  transform:translateY(-2px);
+}
+.hero{
+  height:90vh;
+  width:100%;
+  background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1500&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding-top:80px;
+}
+.hero-inner{
+  background:rgba(2,6,23,0.5);
+  padding:40px;
+  border-radius:12px;
+  max-width:900px;
+}
+.hero h2{
+  font-size:46px;
+  margin-bottom:10px;
+}
+.hero p{
+  font-size:18px;
+}
+.main{
+  width:92%;
+  max-width:1100px;
+  margin:0 auto;
+  padding:40px 0 120px;
+}
+.section{
+  padding:70px 0;
+}
+.section h2{
+  font-size:32px;
+  color:#00eaff;
+  margin-bottom:18px;
+}
+.categories{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+.category{
+  background:#00eaff;
+  color:#022;
+  padding:10px 18px;
+  border-radius:50px;
+  font-weight:600;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px;
+}
+.card{
+  background:#1a1a1a;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 30px rgba(0,0,0,0.5);
+  transition:.3s;
+}
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
+.card .caption{
+  padding:14px;
+}
+.card h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+.card p{
+  font-size:14px;
+  color:#bcd7df;
+  line-height:1.5;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 60px rgba(0,0,0,0.7);
+}
+.book-section{
+  background:#071021;
+  padding:28px;
+  border-radius:12px;
+  max-width:720px;
+  margin:30px auto 0;
+  text-align:center;
+}
+.book-section input, 
+.book-section textarea, 
+.book-section button{
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  font-size:15px;
+  width:100%;
+}
+.book-section textarea{
+  resize:none;
+}
+.book-section button{
+  background:#00eaff;
+  color:#022;
+  font-weight:700;
+  cursor:pointer;
+  transition:.2s;
+  margin-top:10px;
+}
+.book-section button:hover{
+  opacity:0.9;
+  transform:translateY(-3px);
+}
+.footer{
+  background:#000;
+  padding:24px 0;
+  text-align:center;
+  color:#777;
+  margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Aman Photography</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h2>Capturing Moments, Creating Memories</h2>
+    <p>Professional photography focused on portraits, travel, events and storytelling</p>
+  </div>
+</section>
+
+<main class="main">
+  <section class="section" id="categories">
+    <h2>Photography Categories</h2>
+    <div class="categories">
+      <div class="category">Portraits</div>
+      <div class="category">Weddings</div>
+      <div class="category">Travel</div>
+      <div class="category">Nature</div>
+      <div class="category">Fashion</div>
+      <div class="category">Events</div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=1200&q=80">
+        <div class="caption">
+          <h3>Portrait Series</h3>
+          <p>Studio and natural light portraits focusing on expression and mood.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/bc/04/12/bc0412e31c33f06bc7e89644c527bb44.jpg">
+        <div class="caption">
+          <h3>Wedding Moments</h3>
+          <p>Documentary-style wedding photography capturing candid emotions.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.SGRy1Tb4Nv5DfoGq--P-igHaLG?w=735&h=1102&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div class="caption">
+          <h3>Travel Stories</h3>
+          <p>Visual narratives from journeys across landscapes and cultures.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.3d042c92d9b167c065d4875c964d0b4a?rik=j%2bwe8hUaZqdmSA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2015%2f12%2f74165-nature-HDR-river-trees-mountain-landscape.jpg&ehk=yHKVetDTiL5y89jHLEMdJx0A%2f0iGuZctDOo3T9ozKvg%3d&risl=&pid=ImgRaw&r=0">
+        <div class="caption">
+          <h3>Nature & Landscape</h3>
+          <p>Wide vistas and intimate natural details emphasizing light and texture.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/ba/b0/1e/bab01e2aa6c6e6a6c98c3f2f6661c285.jpg">
+        <div class="caption">
+          <h3>Fashion Editorial</h3>
+          <p>Stylized shoots blending fashion direction with cinematic framing.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.oOVgkm_ghOjcAANuiTRWUwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div class="caption">
+          <h3>Events & Live</h3>
+          <p>Capturing atmosphere and energy at concerts, launches and gatherings.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <h2>Book a Session</h2>
+    <div class="book-section">
+      <h3>Request a Booking</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone (optional)">
+        <input type="text" placeholder="Type of Session">
+        <textarea rows="4" placeholder="Message or details"></textarea>
+        <button type="button">Send Request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  © 2025 Aman Photography
+</footer>
+
+</body>
+</html>
